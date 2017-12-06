@@ -20,6 +20,8 @@ public class TestPDF {
 			PDPageContentStream contentStream = new PDPageContentStream(document, page1, PDPageContentStream.AppendMode.APPEND, false);
 			
 			contentStream.setFont(PDType1Font.HELVETICA, 11);
+			
+			//Branchenscheinnr. schreiben
 			 contentStream.beginText();
 			  contentStream.newLineAtOffset(483,664);
 			  contentStream.showText("123456");
