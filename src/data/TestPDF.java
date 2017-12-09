@@ -617,10 +617,10 @@ public class TestPDF {
 			 */
 			PDPageContentStream fehlerstromProzent = new PDPageContentStream(document, page2,
 					PDPageContentStream.AppendMode.APPEND, false);
-			fehlerstromProzent.setFont(PDType1Font.HELVETICA, 9);
+			fehlerstromProzent.setFont(PDType1Font.HELVETICA, 8);
 			fehlerstromProzent.setNonStrokingColor(Color.RED);
 			fehlerstromProzent.beginText();
-			fehlerstromProzent.newLineAtOffset(420f, 674.1f);
+			fehlerstromProzent.newLineAtOffset(425f, 674.1f);
 			fehlerstromProzent.showText("78.15");
 			fehlerstromProzent.endText();
 			fehlerstromProzent.close();
@@ -652,6 +652,125 @@ public class TestPDF {
 			fehlerstromBemerkungen.close();
 			
 			
+			/*
+			 * Schleifenwiderstand Ja
+			 */
+			PDPageContentStream schleifenwiderstandJA = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			schleifenwiderstandJA.setFont(PDType1Font.HELVETICA, 9);
+			schleifenwiderstandJA.setNonStrokingColor(Color.RED);
+			schleifenwiderstandJA.beginText();
+			schleifenwiderstandJA.newLineAtOffset(354.4f, 645.8f);
+			schleifenwiderstandJA.showText("X");
+			schleifenwiderstandJA.endText();
+			schleifenwiderstandJA.close();
+			
+			/*
+			 * Schleifenwiderstand Prozent
+			 */
+			PDPageContentStream schleifenwiderstandProzent = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			schleifenwiderstandProzent.setFont(PDType1Font.HELVETICA, 8);
+			schleifenwiderstandProzent.setNonStrokingColor(Color.RED);
+			schleifenwiderstandProzent.beginText();
+			schleifenwiderstandProzent.newLineAtOffset(425f, 645.8f);
+			schleifenwiderstandProzent.showText("54,78");
+			schleifenwiderstandProzent.endText();
+			schleifenwiderstandProzent.close();
+			
+			/*
+			 * Schleifenwiderstand Nein
+			 */
+			PDPageContentStream schleifenwiderstandNEIN = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			schleifenwiderstandNEIN.setFont(PDType1Font.HELVETICA, 9);
+			schleifenwiderstandNEIN.setNonStrokingColor(Color.RED);
+			schleifenwiderstandNEIN.beginText();
+			schleifenwiderstandNEIN.newLineAtOffset(467.4f, 645.8f);
+			schleifenwiderstandNEIN.showText("X");
+			schleifenwiderstandNEIN.endText();
+			schleifenwiderstandNEIN.close();
+			
+			/*
+			 * Schleifenwiderstand Bemerkung
+			 */
+			PDPageContentStream schleifenwiderstandBemerkung = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			schleifenwiderstandBemerkung.setFont(PDType1Font.HELVETICA, 7);
+			schleifenwiderstandBemerkung.setNonStrokingColor(Color.RED);
+			schleifenwiderstandBemerkung.beginText();
+			schleifenwiderstandBemerkung.newLineAtOffset(142f, 631.7f);
+			schleifenwiderstandBemerkung.showText("Schleifenwiderstand Bemerkung");
+			schleifenwiderstandBemerkung.endText();
+			schleifenwiderstandBemerkung.close();
+			
+			
+			/*
+			 * Thermische Auffälligkeiten Ja
+			 */
+			PDPageContentStream thermischeAuffälligkeitenJA = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			thermischeAuffälligkeitenJA.setFont(PDType1Font.HELVETICA, 9);
+			thermischeAuffälligkeitenJA.setNonStrokingColor(Color.RED);
+			thermischeAuffälligkeitenJA.beginText();
+			thermischeAuffälligkeitenJA.newLineAtOffset(354.3f, 617.7f);
+			thermischeAuffälligkeitenJA.showText("X");
+			thermischeAuffälligkeitenJA.endText();
+			thermischeAuffälligkeitenJA.close();
+			
+			/*
+			 * Thermische Auffälligkeiten Ja
+			 */
+			PDPageContentStream thermischeAuffälligkeitenNEIN = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			thermischeAuffälligkeitenNEIN.setFont(PDType1Font.HELVETICA, 9);
+			thermischeAuffälligkeitenNEIN.setNonStrokingColor(Color.RED);
+			thermischeAuffälligkeitenNEIN.beginText();
+			thermischeAuffälligkeitenNEIN.newLineAtOffset(467.4f, 617.7f);
+			thermischeAuffälligkeitenNEIN.showText("X");
+			thermischeAuffälligkeitenNEIN.endText();
+			thermischeAuffälligkeitenNEIN.close();
+			
+			/*
+			 * Thermische Auffälligkeiten Bemerkungen
+			 */
+			PDPageContentStream thermischeAuffälligkeitenBemerkungen = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			thermischeAuffälligkeitenBemerkungen.setFont(PDType1Font.HELVETICA, 7);
+			thermischeAuffälligkeitenBemerkungen.setNonStrokingColor(Color.RED);
+			thermischeAuffälligkeitenBemerkungen.beginText();
+			thermischeAuffälligkeitenBemerkungen.newLineAtOffset(142f, 603.7f);
+			thermischeAuffälligkeitenBemerkungen.showText("Thermische Auffälligkeiten Bemerkungen");
+			thermischeAuffälligkeitenBemerkungen.endText();
+			thermischeAuffälligkeitenBemerkungen.close();
+			
+			
+			
+			/*
+			 * Ortsveränderliche Betriebsmittel Ja
+			 */
+			PDPageContentStream betriebsmittelJA = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			betriebsmittelJA.setFont(PDType1Font.HELVETICA, 9);
+			betriebsmittelJA.setNonStrokingColor(Color.RED);
+			betriebsmittelJA.beginText();
+			betriebsmittelJA.newLineAtOffset(354.4f, 562.5f);
+			betriebsmittelJA.showText("X");
+			betriebsmittelJA.endText();
+			betriebsmittelJA.close();
+			
+			/*
+			 * Ortsveränderliche Betriebsmittel Nein
+			 */
+			PDPageContentStream betriebsmittelNEIN = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			betriebsmittelNEIN.setFont(PDType1Font.HELVETICA, 9);
+			betriebsmittelNEIN.setNonStrokingColor(Color.RED);
+			betriebsmittelNEIN.beginText();
+			betriebsmittelNEIN.newLineAtOffset(461.4f, 562.5f);
+			betriebsmittelNEIN.showText("X");
+			betriebsmittelNEIN.endText();
+			betriebsmittelNEIN.close();
 			
 			
 			
