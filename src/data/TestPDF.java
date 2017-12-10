@@ -12,7 +12,7 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 public class TestPDF {
 
 	public static void main(String[] args) {
-		File file = new File("src/pdfs/BEFUNDSCHEIN.pdf");
+		File file = new File("src/pdfs/vorlage_bf.pdf");
 		PDDocument document = null;
 		try {
 			document = PDDocument.load(file);
@@ -773,7 +773,320 @@ public class TestPDF {
 			betriebsmittelNEIN.close();
 			
 			
+			/*
+			 * Ortsveränderliche Betriebsmittel Ja
+			 */
+			PDPageContentStream ortsveränderlicheBetriebsmittelJA = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			ortsveränderlicheBetriebsmittelJA.setFont(PDType1Font.HELVETICA, 9);
+			ortsveränderlicheBetriebsmittelJA.setNonStrokingColor(Color.RED);
+			ortsveränderlicheBetriebsmittelJA.beginText();
+			ortsveränderlicheBetriebsmittelJA.newLineAtOffset(354.4f, 527.9f);
+			ortsveränderlicheBetriebsmittelJA.showText("X");
+			ortsveränderlicheBetriebsmittelJA.endText();
+			ortsveränderlicheBetriebsmittelJA.close();
 			
+			/*
+			 * Ortsveränderliche Betriebsmittel Ja
+			 */
+			PDPageContentStream ortsveränderlicheBetriebsmittelNEIN = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			ortsveränderlicheBetriebsmittelNEIN.setFont(PDType1Font.HELVETICA, 9);
+			ortsveränderlicheBetriebsmittelNEIN.setNonStrokingColor(Color.RED);
+			ortsveränderlicheBetriebsmittelNEIN.beginText();
+			ortsveränderlicheBetriebsmittelNEIN.newLineAtOffset(425.7f, 527.9f);
+			ortsveränderlicheBetriebsmittelNEIN.showText("X");
+			ortsveränderlicheBetriebsmittelNEIN.endText();
+			ortsveränderlicheBetriebsmittelNEIN.close();
+			
+			/*
+			 * Ortsveränderliche Betriebsmittel Nr
+			 */
+			PDPageContentStream ortsveränderlicheBetriebsmittelNR = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			ortsveränderlicheBetriebsmittelNR.setFont(PDType1Font.HELVETICA, 9);
+			ortsveränderlicheBetriebsmittelNR.setNonStrokingColor(Color.RED);
+			ortsveränderlicheBetriebsmittelNR.beginText();
+			ortsveränderlicheBetriebsmittelNR.newLineAtOffset(503.1f, 527.6f);
+			ortsveränderlicheBetriebsmittelNR.showText("X");
+			ortsveränderlicheBetriebsmittelNR.endText();
+			ortsveränderlicheBetriebsmittelNR.close();
+			
+			
+			/*
+			 * Versorgungssystem TN
+			 */
+			PDPageContentStream versorgungssystemTN = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			versorgungssystemTN.setFont(PDType1Font.HELVETICA, 9);
+			versorgungssystemTN.setNonStrokingColor(Color.RED);
+			versorgungssystemTN.beginText();
+			versorgungssystemTN.newLineAtOffset(59.2f, 474.9f);
+			versorgungssystemTN.showText("X");
+			versorgungssystemTN.endText();
+			versorgungssystemTN.close();
+			
+			/*
+			 * Versorgungssystem TT
+			 */
+			PDPageContentStream versorgungssystemTT = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			versorgungssystemTT.setFont(PDType1Font.HELVETICA, 9);
+			versorgungssystemTT.setNonStrokingColor(Color.RED);
+			versorgungssystemTT.beginText();
+			versorgungssystemTT.newLineAtOffset(126.1f, 474.9f);
+			versorgungssystemTT.showText("X");
+			versorgungssystemTT.endText();
+			versorgungssystemTT.close();
+			
+			/*
+			 * Versorgungssystem IT
+			 */
+			PDPageContentStream versorgungssystemIT = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			versorgungssystemIT.setFont(PDType1Font.HELVETICA, 9);
+			versorgungssystemIT.setNonStrokingColor(Color.RED);
+			versorgungssystemIT.beginText();
+			versorgungssystemIT.newLineAtOffset(189.3f, 474.9f);
+			versorgungssystemIT.showText("X");
+			versorgungssystemIT.endText();
+			versorgungssystemIT.close();
+			
+			/*
+			 * Versorgungssystem Ringeinspeisung
+			 */
+			PDPageContentStream versorgungssystemRing = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			versorgungssystemRing.setFont(PDType1Font.HELVETICA, 9);
+			versorgungssystemRing.setNonStrokingColor(Color.RED);
+			versorgungssystemRing.beginText();
+			versorgungssystemRing.newLineAtOffset(375.2f, 474.9f);
+			versorgungssystemRing.showText("X");
+			versorgungssystemRing.endText();
+			versorgungssystemRing.close();
+			
+			
+			/*
+			 * Leistungsbedarf Fremdbezug
+			 */
+			PDPageContentStream leistungsbedarfFremdbezug = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			leistungsbedarfFremdbezug.setFont(PDType1Font.HELVETICA, 9);
+			leistungsbedarfFremdbezug.setNonStrokingColor(Color.RED);
+			leistungsbedarfFremdbezug.beginText();
+			leistungsbedarfFremdbezug.newLineAtOffset(497f, 436.8f);
+			leistungsbedarfFremdbezug.showText("75.56");
+			leistungsbedarfFremdbezug.endText();
+			leistungsbedarfFremdbezug.close();
+			
+			/*
+			 * Leistungsbedarf Eigenerzeugung
+			 */
+			PDPageContentStream leistungsbedarfEigenerzeugung = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			leistungsbedarfEigenerzeugung.setFont(PDType1Font.HELVETICA, 9);
+			leistungsbedarfEigenerzeugung.setNonStrokingColor(Color.RED);
+			leistungsbedarfEigenerzeugung.beginText();
+			leistungsbedarfEigenerzeugung.newLineAtOffset(497f, 422.5f);
+			leistungsbedarfEigenerzeugung.showText("83.96");
+			leistungsbedarfEigenerzeugung.endText();
+			leistungsbedarfEigenerzeugung.close();
+			
+			
+			/*
+			 * Schutzeinrichtungen
+			 */
+			PDPageContentStream Schutzeinrichtungen = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			Schutzeinrichtungen.setFont(PDType1Font.HELVETICA, 9);
+			Schutzeinrichtungen.setNonStrokingColor(Color.RED);
+			Schutzeinrichtungen.beginText();
+			Schutzeinrichtungen.newLineAtOffset(377f, 369.9f);
+			Schutzeinrichtungen.showText("42.55");
+			Schutzeinrichtungen.endText();
+			Schutzeinrichtungen.close();
+			
+			
+			/*
+			 * Statistik Verbraucher <250
+			 */
+			PDPageContentStream verbraucher250 = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			verbraucher250.setFont(PDType1Font.HELVETICA, 9);
+			verbraucher250.setNonStrokingColor(Color.RED);
+			verbraucher250.beginText();
+			verbraucher250.newLineAtOffset(59.2f, 301.4f);
+			verbraucher250.showText("X");
+			verbraucher250.endText();
+			verbraucher250.close();
+			
+			/*
+			 * Statistik Verbraucher <500
+			 */
+			PDPageContentStream verbraucher500 = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			verbraucher500.setFont(PDType1Font.HELVETICA, 9);
+			verbraucher500.setNonStrokingColor(Color.RED);
+			verbraucher500.beginText();
+			verbraucher500.newLineAtOffset(161.1f, 301.4f);
+			verbraucher500.showText("X");
+			verbraucher500.endText();
+			verbraucher500.close();
+			
+			/*
+			 * Statistik Verbraucher <1000
+			 */
+			PDPageContentStream verbraucher1000 = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			verbraucher1000.setFont(PDType1Font.HELVETICA, 9);
+			verbraucher1000.setNonStrokingColor(Color.RED);
+			verbraucher1000.beginText();
+			verbraucher1000.newLineAtOffset(245.6f, 301.4f);
+			verbraucher1000.showText("X");
+			verbraucher1000.endText();
+			verbraucher1000.close();
+			
+			/*
+			 * Statistik Verbraucher <5000
+			 */
+			PDPageContentStream verbraucher5000 = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			verbraucher5000.setFont(PDType1Font.HELVETICA, 9);
+			verbraucher5000.setNonStrokingColor(Color.RED);
+			verbraucher5000.beginText();
+			verbraucher5000.newLineAtOffset(341.6f, 301.4f);
+			verbraucher5000.showText("X");
+			verbraucher5000.endText();
+			verbraucher5000.close();
+			
+			/*
+			 * Statistik Verbraucher >5000
+			 */
+			PDPageContentStream verbraucher5000Plus = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			verbraucher5000Plus.setFont(PDType1Font.HELVETICA, 9);
+			verbraucher5000Plus.setNonStrokingColor(Color.RED);
+			verbraucher5000Plus.beginText();
+			verbraucher5000Plus.newLineAtOffset(434.9f, 301.4f);
+			verbraucher5000Plus.showText("X");
+			verbraucher5000Plus.endText();
+			verbraucher5000Plus.close();
+			
+			
+			/*
+			 * Weitere Erläuterungen
+			 */
+			PDPageContentStream erläuterungen = new PDPageContentStream(document, page2,
+					PDPageContentStream.AppendMode.APPEND, false);
+			erläuterungen.setFont(PDType1Font.HELVETICA, 9);
+			erläuterungen.setNonStrokingColor(Color.RED);
+			erläuterungen.beginText();
+			erläuterungen.newLineAtOffset(54f, 160f);
+			erläuterungen.showText("Weiter Erläuterungen");
+			erläuterungen.endText();
+			erläuterungen.close();
+			
+			
+			
+			
+			/*
+			 * 
+			 * Anhang A
+			 * 
+			 */
+			
+			PDPage page3 = document.getPage(2);
+			int versatz = 0;
+			
+			for(int i = 1; i<=5; i++) {
+			
+			
+			/*
+			 * Horizontaler Strich
+			 */
+			PDPageContentStream testLine = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLine.setFont(PDType1Font.HELVETICA, 9);
+			testLine.setNonStrokingColor(Color.RED);
+			testLine.setLineWidth(0.5f);
+			testLine.drawLine(52, 632-versatz, 581.4f, 632-versatz);
+			testLine.close();
+			
+			/*
+			 * Erster vertikaler Strich
+			 */
+			PDPageContentStream testLineVert1 = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLineVert1.setLineWidth(0.5f);
+			testLineVert1.drawLine(52, 662-versatz, 52, 632-versatz);
+			testLineVert1.close();
+			
+			/*
+			 * Zweiter vertikaler Strich
+			 */
+			PDPageContentStream testLineVert2 = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLineVert2.setLineWidth(0.5f);
+			testLineVert2.drawLine(69, 662-versatz, 69, 632-versatz);
+			testLineVert2.close();
+			
+			/*
+			 * Dritter vertikaler Strich
+			 */
+			PDPageContentStream testLineVert3 = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLineVert3.setLineWidth(0.5f);
+			testLineVert3.drawLine(99.3f, 662-versatz, 99.3f, 632-versatz);
+			testLineVert3.close();
+			
+			/*
+			 * Vierter vertikaler Strich
+			 */
+			PDPageContentStream testLineVert4 = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLineVert4.setLineWidth(0.5f);
+			testLineVert4.drawLine(411.5f, 662-versatz, 411.5f, 632-versatz);
+			testLineVert4.close();
+			
+			/*
+			 * Fünfter vertikaler Strich
+			 */
+			PDPageContentStream testLineVert5 = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLineVert5.setLineWidth(0.5f);
+			testLineVert5.drawLine(461, 662-versatz, 461, 632-versatz);
+			testLineVert5.close();
+			
+			/*
+			 * Sechster vertikaler Strich
+			 */
+			PDPageContentStream testLineVert6 = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLineVert6.setLineWidth(0.5f);
+			testLineVert6.drawLine(503.5f, 662-versatz, 503.5f, 632-versatz);
+			testLineVert6.close();
+			
+			/*
+			 * Siebter vertikaler Strich
+			 */
+			PDPageContentStream testLineVert7 = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLineVert7.setLineWidth(0.5f);
+			testLineVert7.drawLine(539, 662-versatz, 539, 632-versatz);
+			testLineVert7.close();
+			
+			/*
+			 * Achter vertikaler Strich
+			 */
+			PDPageContentStream testLineVert8 = new PDPageContentStream(document, page3,
+					PDPageContentStream.AppendMode.APPEND, false);
+			testLineVert8.setLineWidth(0.5f);
+			testLineVert8.drawLine(581.5f, 662-versatz, 581.5f, 632-versatz);
+			testLineVert8.close();
+			
+			
+			versatz += 30;
+			}
 			
 			
 			document.save("src/pdfs/befundschein_written.pdf");
